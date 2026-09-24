@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About CineBook</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            background: #151515;
+            color: #f5f5f5;
+        }
+
+        .navbar-custom {
+            background: #0d0d0d;
+            border-bottom: 1px solid #d4af37;
+        }
+
+        .brand {
+            color: #d4af37;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .about-box {
+            background: #202020;
+            border: 1px solid #3a3a3a;
+            border-radius: 18px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #d4af37;
+            margin-top: 25px;
+        }
+
+        p {
+            color: #cccccc;
+            line-height: 1.7;
+        }
+
+        .btn-gold {
+            background: #d4af37;
+            color: #111;
+            border: none;
+            font-weight: 600;
+        }
+
+        .btn-gold:hover {
+            background: #f0cc55;
+            color: #111;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-custom">
+    <div class="container">
+
+        <span class="brand">🎬 CineBook</span>
+
+        <a asp-action="Index"
+           asp-controller="Cinema"
+           class="btn btn-gold">
+            Home
+        </a>
+
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="about-box">
+
+        <h1>About CineBook</h1>
+
+        <p class="lead">
+            Welcome to CineBook, a simple Cinema Ticket Booking System
+            developed using ASP.NET Core MVC.
+        </p>
+
+        <h3>What can you do?</h3>
+
+        <p>
+            Customers can view available movies, book movie tickets,
+            view booking information, and check the total ticket amount.
+        </p>
+
+        <h3>Features</h3>
+
+        <p>
+            • Movie ticket booking<br>
+            • Customer information<br>
+            • Movie details<br>
+            • Booking status<br>
+            • Total ticket amount in Indian Rupees<br>
+            • Bootstrap-based responsive interface
+        </p>
+
+        <a asp-action="Index"
+           asp-controller="Cinema"
+           class="btn btn-gold mt-3">
+            Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
